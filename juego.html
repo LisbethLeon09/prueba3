@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Piedra, Papel y Tijera</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <h1>Piedra, Papel y Tijera</h1>
+ <!-- División que contiene los botones de elección del usuario -->
+ <div id="game">
+  <div id="userChoice">
+    <p>Tu elección:</p> <!-- Párrafo que indica la elección del usuario -->
+    <!-- Botones para que el usuario elija entre Piedra, Papel y Tijera -->
+    <button onclick="eleccion('piedra')">Piedra</button> <!-- Botón para elegir "Piedra" y activar una función JavaScript -->
+    <button onclick="eleccion('papel')">Papel</button> <!-- Botón para elegir "Papel" y activar una función JavaScript -->
+    <button onclick="eleccion('tijeras')">Tijera</button> <!-- Botón para elegir "Tijera" y activar una función JavaScript -->
+  </div>
+
+  <!-- División para mostrar el resultado del juego -->
+  <div id="result">
+    <p>Resultado:</p> <!-- Párrafo que indica el resultado del juego -->
+    <!-- Aquí se mostrará el mensaje de resultado -->
+    <p id="message"></p> <!-- Párrafo con un ID para mostrar mensajes de resultado mediante JavaScript -->
+  </div>
+</div>
+
+<script src="script.js"></script> <!-- Enlace a un archivo JavaScript externo para la lógica del juego -->
+</body>
+</html>
